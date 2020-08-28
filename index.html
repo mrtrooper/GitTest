@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Yesteryear&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <header>
+            <a href="#" class="logo">GhumGham</a>
+            <div class="nav">
+                <div class="toggle" onclick="show();"></div>
+                    <ul>
+                        <li> <a href="#">Home</a> </li>
+                        <li> <a href="#">About</a> </li>
+                        <li> <a href="#">Booking</a> </li>
+                        <li> <a href="#">Tour</a> </li>
+                        <li> <a href="#">Blog</a> </li>
+                        <li> <a href="#">Contact Us</a> </li>
+                    </ul>
+            </div>
+        </header>
+
+        <ul class="social">
+            <li><a href="#"><img src="facebook.png" alt="Image Not Found"></a></li>
+            <li><a href="#"><img src="instagram.png" alt="Image Not Found"></a></li>
+            <li><a href="#"> <img src="twitter.png" alt="Image Not Found"></a></li>
+        </ul>
+
+        <div class="content">
+            <h2>Inspire <br> your <br> inner <br> traveller</h2>
+        </div>
+
+    </section>
+
+    <script>
+        function show(){
+            const menu=document.querySelector('.toggle');
+            menu.classList.toggle('active');
+            const nav=document.querySelector('.nav');
+            nav.classList.toggle('active');
+        }
+    </script>
+    
+</body>
+</html>
